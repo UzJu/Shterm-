@@ -92,14 +92,3 @@ class shtermFunction:
         self.headers['Content-Type'] = datas.content_type
         r = requests.post(url, headers=self.headers, data=datas, verify=False)
         return r.text
-
-
-# test = shtermFunction('https://172.29.0.206:8081', '42', 'QU9FY2hvaWNld2F5QDAyMjE=')
-# verifyUser = test.verify_otp('Sec-Test', 'qwe@123')
-# getUserId = test.getShtermUserID('Sec-Test')
-# updatePassTime = test.update_Password_ExpireTime(getUserId)
-# updateAccountTime = test.update_Account_ExpireTime(getUserId)
-# print(verifyUser)
-# print(getUserId)
-# print(updatePassTime)
-# print(updateAccountTime)
